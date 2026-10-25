@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-test('test to-do app @sanity', async ({ page }) => {
+test('verify to-do app functionality @sanity', async ({ page }) => {
   await page.goto('https://todomvc.com/examples/react/dist/');
   await page.locator('html').click();
   await page.getByTestId('text-input').click();
